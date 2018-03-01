@@ -1,0 +1,51 @@
+<md-sidenav-container class="example-sidenav-fab-container" style="height: 100%;display: table-row;">
+    <md-sidenav #sidenav mode="side" opened="false">
+      
+      <div class="example-scrolling-content">
+          
+        <ul class="sidebar-nav">
+            <li>
+              <img src="assets/images/angular.svg" [routerLink]="['/']">
+            </li>
+            <li>
+                <a [routerLink]="['/dashboard']"><md-icon> home </md-icon> Dashboard</a>
+            </li>
+            
+            <li>
+              <a [routerLink]="['introduction']"><md-icon> info </md-icon> Introduction</a>
+            </li>
+            <li>
+              <a [routerLink]="['cli']"><md-icon> code </md-icon>Angular Cli</a>
+            </li>
+            <li>
+              <a [routerLink]="['component']"><md-icon> dashboard </md-icon> Components </a>
+            </li>
+            <li>
+                <a [routerLink]="['routing']" ><md-icon> compare_arrows </md-icon>Routes</a>
+            </li>
+            <li>
+                <a [routerLink]="['services']"><md-icon> language </md-icon>Services</a>
+            </li>
+        </ul>
+       
+      </div>
+    </md-sidenav>
+    <button md-fab color="primary" (click)="!sidenav.toggle()">
+      <md-icon><md-icon> reorder </md-icon></md-icon>
+    </button>
+  </md-sidenav-container> 
+  
+<div class="content">
+    
+   <router-outlet>
+      
+   </router-outlet>
+   <div class="footer">
+     <p>Hi, im a front-end web developer i use angular in my project and this little app is an example. I support open source software by
+        helping and organising events with clubs. so feel free to contact me :) with all the best</p>
+    <h2>Jamel Eddine MEJRI</h2> 
+    <span>contact: mejri.jameleddine@gmail.com</span>
+
+      <img src="assets/images/me.jpg">
+   </div>
+</div>

@@ -1,0 +1,62 @@
+<h2>Routing & Navigation</h2>
+<p>
+    The Angular Router enables navigation from one view to the next as users perform application tasks.
+</p>
+<p>The browser is a familiar model of application navigation:</p>
+<ul>
+<li>Enter a URL in the address bar and the browser navigates to a corresponding page.</li>
+<li>Click links on the page and the browser navigates to a new page.</li>
+<li>Click the browser's back and forward buttons and the browser navigates backward and forward through 
+  the history of pages you've seen.</li>
+</ul>
+
+<h4>The Basics</h4>
+<p>
+    The Angular Router is an optional service that presents a particular component view for a given URL. 
+    It is not part of the Angular core. It is in its own library package,
+     @angular/router. Import what you need from it as you would from any other Angular package.
+</p>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc1">
+            
+        </code>
+    </pre>
+</div>
+<h4>Configuration</h4>
+<p>
+    A routed Angular application has one singleton instance of the Router service. When the browser's URL changes,
+    that router looks for a corresponding Route from which it can determine the component to display.
+</p>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc2">
+            
+        </code>
+    </pre>
+</div>
+<h4>app.routes.ts</h4>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc3">
+            
+        </code>
+    </pre>
+</div>
+<h4>import app.routes.ts to app.module.ts</h4>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc4">
+            
+        </code>
+    </pre>
+</div>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc5">
+            
+        </code>
+    </pre>
+</div>
+<button md-button class="next" [routerLink]="['../services']" >Next<md-icon> keyboard_arrow_right</md-icon></button>
+<button md-button class="previous" [routerLink]="['../component']" ><md-icon> keyboard_arrow_left </md-icon>Previous</button>

@@ -1,0 +1,52 @@
+<h2>Angular CLI</h2>
+<p>
+    The Angular CLI makes it easy to create an application that already works,
+    right out of the box. It already follows our best practices!
+</p>
+
+<h4>Prerequisites</h4>
+<p>
+    Both the CLI and generated project have dependencies that require Node 6.9.0 or higher, together with NPM 3 or higher.
+</p>
+
+<h4>Installation</h4>
+<div class="code">
+    <pre>
+        <code>
+            npm install -g @angular/cli
+        </code>
+    </pre>
+</div>
+<h4>Generating and serving an Angular project via a development server</h4>
+<div class="code">
+    <pre>
+        <code>
+                ng new PROJECT-NAME
+                cd PROJECT-NAME
+                ng serve
+                ng serve --host 0.0.0.0 --port 4201   == http://localhost:4201/
+        </code>
+    </pre>
+</div>
+<h4>Generating Components, Directives, Pipes and Services</h4>
+<div class="code">
+    <pre>
+        <code>
+                ng generate component my-new-component
+                ng g component my-new-component # using the alias
+                
+                # components support relative path generation
+                # if in the directory src/app/feature/ and you run
+                ng g component new-cmp
+                # your component will be generated in src/app/feature/new-cmp
+                # but if you were to run
+                ng g component ../newer-cmp
+                # your component will be generated in src/app/newer-cmp
+                # if in the directory src/app you can also run
+                ng g component feature/new-cmp
+                # and your component will be generated in src/app/feature/new-cmp
+        </code>
+    </pre>
+</div>
+<button md-button class="next" [routerLink]="['../component']" >Next<md-icon> keyboard_arrow_right</md-icon></button>
+<button md-button class="previous" [routerLink]="['../introduction']" ><md-icon> keyboard_arrow_left </md-icon>Previous</button>

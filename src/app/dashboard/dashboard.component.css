@@ -1,0 +1,79 @@
+md-sidenav-container md-sidenav{
+    width: 20%;
+    height: 100%;
+    opacity: 0.95;
+    overflow: hidden;
+
+}
+.content{
+width: 80%;
+height: auto;
+margin: 0% 0% 0% 10% !important;
+color: white;
+}
+.mat-drawer-container {
+    background-color: transparent !important;
+    
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    right:15px;
+    left: 0px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    width: 150%;
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+.sidebar-nav >li> a> md-icon{
+    width: 50px;
+  
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #312A25;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+.footer{
+    text-align: center;
+    display: inline-grid;
+    margin: 5%;
+}
+.footer img{
+    text-align: center;
+    margin: 0 auto;
+    width: 15%;
+    border-radius: 100px;
+}

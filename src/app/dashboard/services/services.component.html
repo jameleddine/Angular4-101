@@ -1,0 +1,46 @@
+<h4>Services</h4>
+<p>
+  In Angular, a service is basically any set of functionality that we want to be available to multiple components. 
+  It's just an easy way to wrap up some functionality. 
+  So inside of our app directory, let's create a projects service. And we'll call this projects.service.ts. 
+</p>
+<p>
+    Now of course a service is not a component, so there's no need to import the component decorator. 
+    But there is another decorator that we need, and that is Injectable. So let's import Injectable from angular/core. 
+    Now as I said, Injectable is a decorator, and it doesn't take any properties.
+     So we'll just call Injectable, and then export our class. We'll call the class ProjectsService.
+</p>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc1">
+        </code>
+    </pre>
+</div>
+<p>
+    Injectable makes this class something that Angular can use as dependency injection. As we'll see a bit later on, we use dependency injection to get an instance of this project service within a component that uses the project's service. An Angular queue uses dependency injection in this way so that it can easily inject mock services and things like that if you want to test your components.
+</p>
+<p>
+    Now that we've imported that in both the necessary places, we can use dependency injection to inject this Http class into our ProjectsService. So instead of doing something like new Http() in here, what we'll do is create a constructor function. And this constructor will take a property of type Http.
+</p>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc2">
+        </code>
+    </pre>
+</div>
+
+<h4>Update the app.module.ts</h4>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc3">
+        </code>
+    </pre>
+</div>
+<h4>Use the service in the app.component.ts</h4>
+<div class="code">
+    <pre>
+        <code [innerHTML]="bloc4">
+        </code>
+    </pre>
+</div>
+<button md-button class="previous" [routerLink]="['../routing']" ><md-icon> keyboard_arrow_left </md-icon>Previous</button>

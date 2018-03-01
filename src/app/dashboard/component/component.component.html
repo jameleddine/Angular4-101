@@ -1,0 +1,43 @@
+<h2>Component</h2>
+<p>
+    In Angular 2, 'everything is a component.' Components are the main way we build and specify elements and logic on the page,
+     through both custom elements and attributes that add functionality to our existing components.
+</p>
+
+<h4>app.component.ts</h4>
+
+<div class="code">
+    <pre>
+        <code>
+            {{bloc1}}
+        </code>
+    </pre>
+</div>
+
+<h4>Structure</h4>
+<div class="code">
+    <pre>
+        <code [innerHTML]="code1">
+            
+        </code>
+    </pre>
+</div>
+<h5>Declare NewComponent in the AppModule</h5>
+<div class="code">
+    <pre>
+        <code [innerHTML]="code2">
+            
+        </code>
+    </pre>
+</div>
+<h5>Add NewComponent to the module's declarations array.</h5>
+<div class="code">
+    <pre>
+        <code [innerHTML]="code3">
+            
+        </code>
+    </pre>
+</div>
+
+<button md-button class="next" [routerLink]="['../routing']">Next<md-icon> keyboard_arrow_right</md-icon></button>
+<button md-button class="previous" [routerLink]="['../cli']"><md-icon> keyboard_arrow_left </md-icon>Previous</button>
